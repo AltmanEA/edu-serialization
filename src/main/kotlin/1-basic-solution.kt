@@ -11,7 +11,7 @@ data class Course(
 )
 
 fun main(){
-    val course = Course("Math", Person("Leonard"))
+    val course = Course("Math", Person("Leonard Euler"))
     val mathJson = Json.encodeToString(course)
     val physJson = Json.decodeFromString<Course>("{\"name\": \"Phys\"}")
 
